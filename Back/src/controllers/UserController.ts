@@ -4,6 +4,7 @@ import { User } from "../models";
 const getAllUsers = async (req: Request, res: Response) => {
     const users = await User.findAll();
     res.send(users);
+    
 }
 
 const getUser = async (req: Request, res: Response) => {
